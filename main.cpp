@@ -281,7 +281,7 @@ public:
                 ball->randDirection();
             }
             
-            if (current = 'q')
+            if (current == 'q')
             {
                 quit = true;
             }
