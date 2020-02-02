@@ -233,6 +233,8 @@ public:
             cout << "\xB2";
         }
         cout << endl;
+
+        cout << "SCORE 1:: " << score1 << " SCORE 2:: " << score2 << endl;
     }
     void Input()
     {
@@ -251,28 +253,28 @@ public:
             {
                 if (player1y > 0)
                 {
-                    player1->moveUp();
+                    player1->moveDown();
                 }
             }
             if (current == up2)
             {
                 if (player2y > 0)
                 {
-                    player2->moveUp();
+                    player2->moveDown();
                 }
             }
             if (current == down1)
             {
                 if (player1y + 4 < heigth)
                 {
-                    player1->moveDown();
+                    player1->moveUp();
                 }
             }
             if (current == down2)
             {
                 if (player2y + 4 < heigth)
                 {
-                    player2->moveDown();
+                    player2->moveUp();
                 }
             }
 
